@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.lovelane.grpc.order;
+
+option go_package = "pb/order";
+
+service Order {
+    rpc TrialAndError(Hello) returns (World) {}
+}
+
+message Hello {
+    string sayHello = 1;
+}
+
+message World {
+    string sayWorld = 1;
+}
