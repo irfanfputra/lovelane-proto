@@ -4,7 +4,7 @@ package com.lovelane.grpc.order;
 
 option go_package = "pb/order";
 
-service Order {
+service OrderService {
     rpc TrialAndError(Hello) returns (World) {}
 }
 
